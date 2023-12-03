@@ -1,0 +1,4 @@
+Flask
+feedparser
+requests
+google-cloud-secret-manager
