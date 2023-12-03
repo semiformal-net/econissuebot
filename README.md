@@ -14,8 +14,8 @@ This runs in app engine. The rss feed is entered as a secret.
 
 1. Make a GCP project
 
-2. Add a secret called `feed` containing the url from above
+2. Add a secret called `feed` containing the url from above. The name `feed` is important as it is hardcoded.
 
 3. Grant the [right permissions](https://tsmx.net/integrating-gcp-secret-manager-with-app-engine-environment-variables/#Granting_Secret_Manager_rights_to_the_GAE_service_account)
 
-4. update the `PROJECT_ID` in `app.yml` (it should be a big number 211821181654). you double check, click the dots beside the secret in secret manager and click _copy resource name_
+4. update the `PROJECT_ID` in `app.yml` (it should be a big number 211821181654). To double check, click the dots beside the secret in secret manager and click _copy resource name_ ([like this](https://tsmx.net/integrating-gcp-secret-manager-with-app-engine-environment-variables/#Referencing_secrets_in_the_deployment_descriptor))
